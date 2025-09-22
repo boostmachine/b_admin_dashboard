@@ -1,0 +1,48 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "sidebar header header header"
+  "sidebar maincontent maincontent rightpanel"
+  "sidebar maincontent maincontent rightpanel"
+  "sidebar maincontent maincontent rightpanel";
+}
+
+header {
+  display: grid;
+  grid-area: header;
+  grid-template-areas:
+  "searchbar profile"
+  "welcome profile";
+}
+.maincontent {
+  grid-area: maincontent;
+  display: grid;
+  grid-template-columns: 0.8fr 0.8fr;
+  grid-template-rows: 0.15fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+.maincontent h2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.rightpanel {
+  grid-area: rightpanel;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.avatar img, .profile img {
+  width: 120px;
+}
+.profile {
+  grid-area: profile;
+}
+.welcome{
+  grid-area: welcome;
+  display: flex;
+}
+.searchbar{
+  grid-area: searchbar;
+}
