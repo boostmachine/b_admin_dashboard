@@ -46,3 +46,12 @@ header {
 .searchbar{
   grid-area: searchbar;
 }
+
+.profile ul {
+  display: flex;
+  gap: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
