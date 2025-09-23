@@ -5,19 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <!-- Search bar -->
-     <!-- AVATAR AND Welcome -->
-    <!-- Right section with avatar and buttons new upload share -->
-    <div class="searchbar">Search</div>
+    <div class="searchbar">
+      <img src="./images/search.svg" alt="">
+      <input id="search" type="search" class="search-input" placeholder="Search">
+    </div>
     <div class="welcome">
-      <div class="avatar"><img src="./images/ava.PNG" alt="monkey_calls"></div>
-      Hi there ${username}
+      <div class="avatar"><img src="./images/ava.PNG" alt="monkey_calls" class="monkey"></div>
+      <h2>Hi there,</h2>
+      <h3>Dukduk Monkey (@monkeybusiness)</h3>
     </div>
     <div class="profile">
-      <img src="./images/ava.PNG" alt="monkey_calls">
+      <img class="monkey" src="./images/ava.PNG" alt="monkey_calls">
+      <h3>Dukduk Monkey</h3>
       <ul>
         <li>New</li>
         <li>Upload</li>
@@ -26,45 +31,48 @@
     </div>
   </header>
   <section class="sidebar">
-    <nav>
+    <h2><img src="./images/dashboard.svg" alt="">Dashboard</h2>
+    <nav class="tophalf">
       <ul>
-        <li>Home</li>
-        <li>Profile</li>
-        <li>Messages</li>
-        <li>History</li>
-        <li>Tasks</li>
-        <li>Communities</li>
+        <li><img src="./images/home.svg" alt=""><a href="#">Home</a></li>
+        <li><img src="./images/account.svg" alt=""><a href="#">Profile</a></li>
+        <li><img src="./images/chat.svg" alt=""><a href="#">Messages</a></li>
+        <li><img src="./images/history.svg" alt=""><a href="#">History</a></li>
+        <li><img src="./images/tasks.svg" alt=""><a href="#">Tasks</a></li>
+        <li><img src="./images/communities.svg" alt=""><a href="#">Communities</a></li>
       </ul>
     </nav>
-    <nav>
-      <li>Settings</li>
-      <li>Support</li>
-      <li>Privacy</li>
+    <nav class="bottomhalf">
+      <ul>
+        <li><img src="./images/settings.svg" alt=""><a href="#">Settings</a></li>
+        <li><img src="./images/support.svg" alt=""><a href="#">Support</a></li>
+        <li><img src="./images/privacy_tip.svg" alt=""><a href="#">Privacy</a></li>
+      </ul>
     </nav>
   </section>
   <main class="maincontent">
     <h2>Your Projects</h2>
-    <div class="project1">
+    <div class="project project1">
       <h2>Super Cool Project</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus facilis nulla voluptatum quod consequuntur aliquid enim cumque, placeat eos delectus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, nostrum.</p>
     </div>
-    <div class="project2">
+    <div class="project project2">
       <h2>Less Cool Project</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cupiditate.</p>
     </div>
-    <div class="project3">
+    <div class="project project3">
       <h2>Giga Cool Project</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, earum.</p>
     </div>
-    <div class="project4">
+    <div class="project project4">
       <h2>Mega Cool Project</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, voluptates. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, sed.</p>
     </div>
-    <div class="project5">
+    <div class="project project5">
       <h2>Omega Project</h2>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, impedit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, pariatur.</p>
     </div>
-    <div class="project6">
+    <div class="project project6">
       <h2>Sezam Project</h2>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, necessitatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aperiam!</p>
     </div>
